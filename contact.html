@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Craft Crumbs | | Contact Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playwrite+NZ+Basic:wght@100..400&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="craft_crumbs_logo.jpeg" />
+</head>
+
+<body>
+
+    <style>
+        html,
+        body {
+            overflow: auto;
+            /* scrolling still works */
+            scrollbar-width: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Playwrite NZ Basic", cursive;
+        }
+
+        .pannel {
+            position: absolute;
+            left: 32%;
+            width: 36.6%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+
+        .contact {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            outline: none;
+            border: 2px solid black;
+            cursor: pointer;
+            transition: 0.1s ease;
+        }
+
+        .contact:active {
+            transform: scale(0.9);
+        }
+
+        i {
+            font-size: 20px;
+        }
+
+        .name {
+            width: 500px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .name h1 {
+            margin-left: 60px;
+        }
+
+        .work {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            position: absolute;
+            top: 11%;
+            left: 32%;
+            width: 520px;
+            padding: 20px;
+            height: 575px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+
+        .holder {
+            width: 100%;
+            height: 575px;
+            padding: 10px;
+            gap: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-direction: column;
+            border: 2px solid black;
+        }
+
+        .items {
+            width: 80%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .items i {
+            font-size: 30px;
+            margin: 0;
+            padding: 0;
+            margin-right: 5px;
+        }
+
+        .label {
+            width: 40%;
+            height: 100px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .label h3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            place-items: center;
+        }
+
+        .link {
+            width: 60%;
+            height: 100px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .developer {
+            width: 100%;
+            height: 100px;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid black;
+        }
+
+        .developer .label {
+            width: 40%;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .developer .link {
+            width: 60%;
+            height: 100px;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        .bottom {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: right;
+            align-items: center;
+
+        }
+
+        .bottom h2 {
+            margin-right: 10px;
+        }
+
+
+        @media (max-width: 415px) {
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Playwrite NZ Basic", cursive;
+            }
+
+            .pannel {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: beige;
+            }
+
+            .container {
+                position: absolute;
+                top: 9%;
+                left: 0%;
+                width: 400px;
+                padding: 7px;
+                height: 740px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: beige;
+            }
+
+            .contact {
+                width: 45px;
+                height: 45px;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                outline: none;
+                border: 2px solid black;
+                cursor: pointer;
+                transition: 0.1s ease;
+            }
+
+            .contact:active {
+                transform: scale(0.9);
+            }
+
+            .holder {
+                width: 98%;
+                height: 350px;
+                padding: 5px;
+                gap: 15px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                border: 1px solid black;
+            }
+
+            .items {
+                width: 95%;
+                height: 100px;
+                display: flex;
+                gap: 5px;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+            }
+
+            .items i {
+                font-size: 27px;
+                margin: 0;
+                padding: 0;
+                margin-right: 5px;
+            }
+
+            .label {
+                width: 40%;
+                height: 100px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+
+            .label h3 {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                place-items: center;
+            }
+
+            .link {
+                width: 58%;
+                height: 100px;
+                font-size: 14px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+            }
+
+            .developer {
+                width: 98%;
+                height: 100px;
+                padding: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid black;
+            }
+
+            .developer .label {
+                width: 40%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .developer .link {
+                width: 60%;
+                height: 100px;
+                display: flex;
+                justify-content: left;
+                align-items: center;
+            }
+
+            .bottom {
+                position: fixed;
+                bottom: 0px;
+                width: 400px;
+                height: 25px;
+                margin-top: 50px;
+                display: none;
+                justify-content: center;
+                align-items: center;
+                border-top: 2px solid black;
+            }
+
+        }
+    </style>
+
+    <div class="pannel">
+        <div class="name">
+            <h1>Craft Crumbs</h1>
+        </div>
+        <div class="work">
+            <button class="contact" id="contact"><i class="fa-solid fa-home"></i></button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="holder">
+            <h2>Contact Details For Orders</h2>
+
+            <div class="items">
+                <div class="label">
+                    <h3><i class="fa-brands fa-instagram"></i> Instagram: </h3>
+                </div>
+                <div class="link">
+                    <a href="https://www.instagram.com/craft.crumbs/"> Click To See Our Insta Page</a>
+                </div>
+            </div>
+
+            <div class="items">
+                <div class="label">
+                    <h3><i class="fa-brands fa-whatsapp"></i> Whatsapp: </h3>
+                </div>
+                <div class="link">
+                    <a href="#">Click To Contact on Whatsapp</a>
+                </div>
+            </div>
+
+
+
+            <div class="bottom">
+                <h2>By: Sanskriti Patidar</h2>
+            </div>
+        </div>
+
+        <div class="developer">
+            <div class="label">
+                <h3><i class="fa-solid fa-user"></i> Developer: </h3>
+            </div>
+            <div class="link">
+                <a href="web.html">Click To Se Developer's Portfolio </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        contact.addEventListener("click", () => {
+            window.location.href = "index.html";
+        });
+    </script>
+
+</body>
+
+
+</html>
