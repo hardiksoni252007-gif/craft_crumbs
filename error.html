@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Craft Crumbs | | Contact Page</title>
+    <title>Craft Crumbs | | Error 404</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,12 +16,101 @@
 </head>
 <body>
 
-    <style>
-        h1{
+        <style>
+        html,
+        body {
+            overflow: auto;
+            /* scrolling still works */
+            scrollbar-width: none;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "Playwrite NZ Basic", cursive;
+        }
+
+        .pannel {
+            position: absolute;
+            left: 32%;
+            width: 36.6%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+
+
+        .container {
+            position: absolute;
+            top: 11%;
+            left: 32%;
+            width: 520px;
+            padding: 20px;
+            height: 575px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: beige;
+        }
+        .holder{
+            width: 500px;
+            height: 200px;
+            padding: 20px;
             color: maroon;
+            border: 2px solid maroon;
+        }
+
+
+
+        @media (max-width: 415px) {
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: "Playwrite NZ Basic", cursive;
+            }
+
+            .pannel {
+                position: absolute;
+                left: 0;
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: beige;
+            }
+
+            .container {
+                position: absolute;
+                top: 9%;
+                left: 0%;
+                width: 400px;
+                padding: 7px;
+                height: 740px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                background-color: beige;
+            }
+
         }
     </style>
-    <h1>Error 404: Developer is Currently Wroking on this</h1>
+
+    <div class="pannel">
+        <div class="name">
+            <h1>Craft Crumbs</h1>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="holder">
+            <h1>Error 404: Developer Currently working on this</h1>
+        </div>
+    </div>
 
 </body>
 </html>
